@@ -27,8 +27,8 @@ class ListViewItem extends StatelessWidget{
                         image: image,
                         ),
                       ),
-                      Text("$text", style: listViewItemTitleTextStyle),
-                      Text("$minute", style: listViewItemMinTextStyle),
+                      Text("$text", style: Theme.of(context).textTheme.bodyText2),
+                      Text("$minute", style: Theme.of(context).textTheme.headline1),
                     ],
                   ),
                 );

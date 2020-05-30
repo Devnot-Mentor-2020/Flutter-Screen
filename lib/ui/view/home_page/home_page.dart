@@ -7,6 +7,7 @@ import 'package:medium_ui/ui/shared/text_styles.dart';
 import 'package:medium_ui/ui/shared/ui_helpers.dart';
 
 class HomePage extends StatefulWidget{
+  
   @override
   _HomePageState createState()=>_HomePageState();
 }
@@ -15,6 +16,7 @@ class _HomePageState extends State <HomePage>{
   @override
   Widget build (BuildContext context){
     return Scaffold( 
+      
       bottomNavigationBar: CreateButtomNavigationBar(),
       body: Scaffold(        
         bottomNavigationBar:MusicPlayerNavigationBar(), 
@@ -40,7 +42,7 @@ class BodyTextWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: doublePaddingLeft ,top: paddingTop),
           child: Row( children: [ 
-            Text("For you", style:homePageBodyTextStyle),],
+            Text("For you", style:Theme.of(context).textTheme.subtitle1)],
           ),
         ),
       ListViewWidget(),
@@ -57,6 +59,7 @@ class ListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+    
     padding: EdgeInsets.only(left: paddingLeft),
     height: MediaQuery.of(context).size.height*0.35,
     child: CreateListView(),

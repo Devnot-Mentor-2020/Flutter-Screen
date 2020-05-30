@@ -39,8 +39,8 @@ class TextItem extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-      Text("Tunes for The Anxious",style: musicPlayerNavigationBarTitle),
-      Text("David Mason - The ways to live", style:  musicPlayerNavigationBarText)
+      Text("Tunes for The Anxious",style:Theme.of(context).textTheme.headline2),
+      Text("David Mason - The ways to live", style:Theme.of(context).textTheme.headline3)
     ],
    );
   }
