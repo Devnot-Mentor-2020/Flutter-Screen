@@ -12,7 +12,5 @@ final healthoTheme = ThemeData(
     headline2: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.black ),
     headline3: TextStyle(color: Colors.black45,fontSize: 12),
     headline4: TextStyle(fontSize: 17,color: Colors.white),
-    
-
-  )
+    )
 );
