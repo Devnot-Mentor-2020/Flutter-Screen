@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:medium_ui/ui/shared/text_styles.dart';
 
 
 class MusicPlayerNavigationBar extends StatefulWidget{
@@ -39,8 +38,8 @@ class TextItem extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-      Text("Tunes for The Anxious",style: musicPlayerNavigationBarTitle),
-      Text("David Mason - The ways to live", style:  musicPlayerNavigationBarText)
+      Text("Tunes for The Anxious",style:Theme.of(context).textTheme.headline2),
+      Text("David Mason - The ways to live", style:Theme.of(context).textTheme.headline3)
     ],
    );
   }

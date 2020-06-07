@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:medium_ui/ui/shared/text_styles.dart';
 import 'package:medium_ui/ui/shared/ui_helpers.dart';
 class ListViewItem extends StatelessWidget{
     
@@ -16,22 +15,21 @@ class ListViewItem extends StatelessWidget{
 
   Container containerItem(BuildContext context){
     return Container(
-      padding:EdgeInsets.all(paddingTop),                 
-                  width: MediaQuery.of(context).size.width*0.44,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: MediaQuery.of(context).size.height*0.25,                       
-                        decoration: BoxDecoration(
-                        image: image,
+      padding:EdgeInsets.all(UiHelper.paddingTop),                 
+              width: MediaQuery.of(context).size.width*0.44,
+              child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: MediaQuery.of(context).size.height*0.25,                       
+                      decoration: BoxDecoration(
+                      image: image,
                         ),
                       ),
-                      Text("$text", style: listViewItemTitleTextStyle),
-                      Text("$minute", style: listViewItemMinTextStyle),
+                      Text("$text", style: Theme.of(context).textTheme.bodyText2),
+                      Text("$minute", style: Theme.of(context).textTheme.headline1),
                     ],
                   ),
                 );
   }
-
 }
